@@ -17,6 +17,18 @@ module.exports = {
     ],
     sidebar: [
       {
+        title: '指南',
+        path: '/guide/api',
+      },
+      {
+        title: 'UI规范',
+        path: '/style/api',
+      },
+      {
+        title: '代码规范',
+        path: '/rules/api',
+      },
+      {
         title: 'CmpHelper',
         path: '/cmpHelper/api',
       },
