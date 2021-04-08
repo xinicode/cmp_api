@@ -1,10 +1,9 @@
 # 配置
 
-## 引入
 
 #### import { CmpHelper } from "@cmp/core"
 
-### replaceAll
+## replaceAll
 #### 在字符串中用一些字符替换另一些字符。
 - 参数
   * ` string `  s     
@@ -26,7 +25,7 @@ vuepress dev docs --no-cache     # 在每次构建前删除 cache
 ```
 
 ::: -->
-### toStr
+## toStr
 #### 转换字符串 
 - 参数
   * ` string `  s    
@@ -36,7 +35,7 @@ vuepress dev docs --no-cache     # 在每次构建前删除 cache
 ``` 
   CmpHelper.toStr(s):String
 ```
-### isType
+## isType
 #### 判断类型 
 - 参数
   * ` string `  typename  (String, Array, Boolean, Object, RegExp, Date, Function,Number)
@@ -48,7 +47,7 @@ vuepress dev docs --no-cache     # 在每次构建前删除 cache
   CmpHelper.isType("String",value):Boolean
 ```
 
-### isUndefined
+## isUndefined
 #### 检测是否undefined
 - 参数
   * ` string `  s
@@ -59,7 +58,7 @@ vuepress dev docs --no-cache     # 在每次构建前删除 cache
 ```
 
 
-### isNull
+## isNull
 #### 是否为null 
 - 参数
   * ` string `  s
@@ -69,7 +68,7 @@ vuepress dev docs --no-cache     # 在每次构建前删除 cache
   CmpHelper.isNull(s):Boolean
 ```
 
-### isBoolean
+## isBoolean
 #### 是否为boolean
 - 参数
   * ` string `  s
@@ -77,7 +76,7 @@ vuepress dev docs --no-cache     # 在每次构建前删除 cache
 ``` 
   CmpHelper.isBoolean(s):Boolean
 ```
-### isNullEmpty
+## isNullEmpty
 #### 是否为空
 - 参数
   * ` string `  s
@@ -85,7 +84,7 @@ vuepress dev docs --no-cache     # 在每次构建前删除 cache
 ``` 
   CmpHelper.isNullEmpty(s):Boolean
 ```
-### isFunction
+## isFunction
 #### 是否为boolean
 - 参数
   * ` string `  s
@@ -93,7 +92,7 @@ vuepress dev docs --no-cache     # 在每次构建前删除 cache
 ``` 
   CmpHelper.isFunction(s):Boolean
 ```
-### isNumeric
+## isNumeric
 #### 是否为Numer
 - 参数
   * ` string `  s  (111,"1111" return true)
@@ -101,7 +100,7 @@ vuepress dev docs --no-cache     # 在每次构建前删除 cache
 ``` 
   CmpHelper.isNumeric(s):Boolean
 ```
-### isString
+## isString
 #### 是否为string
 - 参数
   * ` string `  s
@@ -110,7 +109,7 @@ vuepress dev docs --no-cache     # 在每次构建前删除 cache
   CmpHelper.isString(s):Boolean
 ```
 
-### isObject
+## isObject
 #### 是否为Object
 - 参数
   * ` string `  s
@@ -119,7 +118,7 @@ vuepress dev docs --no-cache     # 在每次构建前删除 cache
   CmpHelper.isObject(s):Boolean
 ```
 
-### isElement
+## isElement
 #### 是否为Element对象
 - 参数
   * ` any `  s
@@ -128,7 +127,7 @@ vuepress dev docs --no-cache     # 在每次构建前删除 cache
   CmpHelper.isElement(s):Boolean
 ```
 
-### isWindow
+## isWindow
 #### 是否为Window对象
 - 参数
   * ` any `  s
@@ -136,7 +135,7 @@ vuepress dev docs --no-cache     # 在每次构建前删除 cache
 ``` 
   CmpHelper.isWindow(s):Boolean
 ```
-### isArray
+## isArray
 #### 是否为数组对象
 - 参数
   * ` any `  s
@@ -145,7 +144,7 @@ vuepress dev docs --no-cache     # 在每次构建前删除 cache
   CmpHelper.isArray(s):Boolean
 ```
 
-### isPlainObject
+## isPlainObject
 #### 判断是否一个纯粹的对象,就是该对象是通过"{}"或"new Object"创建的
 - 参数
   * ` any `  s
@@ -153,7 +152,7 @@ vuepress dev docs --no-cache     # 在每次构建前删除 cache
 ``` 
   CmpHelper.isPlainObject(s):Boolean
 ```
-### isEqualNotFn
+## isEqualNotFn
 #### 比较两个对像是否相等，但不比较function类型
 - 参数
   * ` object `  p1
@@ -163,7 +162,7 @@ vuepress dev docs --no-cache     # 在每次构建前删除 cache
   CmpHelper.isEqualNotFn(p1,p2):Boolean
 ```
 
-### inArray
+## inArray
 #### 查询数组是否存在某元素
 - 参数
   * ` Array<any> `  list
@@ -172,7 +171,7 @@ vuepress dev docs --no-cache     # 在每次构建前删除 cache
 ``` 
   CmpHelper.inArray(list,p):Number
 ```
-### toArray
+## toArray
 #### 字符串转换数组（slice）
 - 参数
   * ` String `  str
@@ -183,7 +182,7 @@ vuepress dev docs --no-cache     # 在每次构建前删除 cache
   CmpHelper.inArray(list,start?,count?): Array
 ```
 
-### trim
+## trim
 #### 去除字符串的空格
 - 参数
   * ` String `  str
@@ -203,7 +202,7 @@ vuepress dev docs --no-cache     # 在每次构建前删除 cache
   CmpHelper.arrayToObject(list,fileName): String
 ``` -->
 
-### each
+## each
 #### 遍历
 - 参数
   * ` Array<any> `  list
@@ -211,7 +210,7 @@ vuepress dev docs --no-cache     # 在每次构建前删除 cache
 ``` 
   CmpHelper.each(list,(item,index)=>{}): void
 ```
-### hasOwnProp
+## hasOwnProp
 #### 检测对象是否存在某key
 - 参数
   * ` Object<any> `  object
@@ -220,7 +219,7 @@ vuepress dev docs --no-cache     # 在每次构建前删除 cache
   CmpHelper.hasOwnProp(object,str): Boolean
 ```
 
-### eachProp
+## eachProp
 #### 遍历对象使用
 - 参数
   * ` Object `  object
@@ -229,7 +228,7 @@ vuepress dev docs --no-cache     # 在每次构建前删除 cache
 ``` 
   CmpHelper.eachProp(object,newline): void
 ```
-### extend
+## extend
 #### 扩展
 - 参数
   * ` Object `  object   扩展到Obj
@@ -238,13 +237,13 @@ vuepress dev docs --no-cache     # 在每次构建前删除 cache
 ``` 
   CmpHelper.extend(object,args): Object
 ```
-### makeAutoId
+## makeAutoId
 #### 生成随机Id
  ``` 
   CmpHelper.makeAutoId(): Number
 ```
 
-### isClass
+## isClass
 #### 是否属于类是否继承某类
 - 参数
   * ` any `  p
@@ -267,7 +266,7 @@ vuepress dev docs --no-cache     # 在每次构建前删除 cache
   let ast = CmpHelper.isClass(web, t)
   true
 ```
-### isComponent
+## isComponent
 #### 
 - 参数
   * ` Boolean  ` cls  
@@ -275,7 +274,7 @@ vuepress dev docs --no-cache     # 在每次构建前删除 cache
 ``` 
   CmpHelper.isComponent(cls): boolean
 ```
-### offset
+## offset
 #### dom位偏移
 - 参数
   * ` any `  element
@@ -284,7 +283,7 @@ vuepress dev docs --no-cache     # 在每次构建前删除 cache
 ``` 
   CmpHelper.offset(element,{top:number,left:number}): void
 ```
-### setQuerystring
+## setQuerystring
 #### 拼接URl字符串参数
 - 参数
   * ` String `  url
@@ -295,7 +294,7 @@ vuepress dev docs --no-cache     # 在每次构建前删除 cache
 ``` 
   CmpHelper.setQuerystring(url,params): String
 ```
-### getQuerystring
+## getQuerystring
 #### 获取url query, 如果name为空返回query部分
 - 参数
   * ` String `  url
@@ -304,7 +303,7 @@ vuepress dev docs --no-cache     # 在每次构建前删除 cache
 ``` 
   CmpHelper.getQuerystring(url,name): String
 ```
-### queryParse
+## queryParse
 #### 字符串转对象
 - 参数
   * ` String `  str
@@ -321,7 +320,7 @@ vuepress dev docs --no-cache     # 在每次构建前删除 cache
 ``` 
   CmpHelper.queryStringify(query,useToHttp): String
 ``` -->
-### setHashQuerystring
+## setHashQuerystring
 #### 拼接Hash URl字符串参数
 - 参数
   * ` String `  url
@@ -331,7 +330,7 @@ vuepress dev docs --no-cache     # 在每次构建前删除 cache
 ``` 
   CmpHelper.setHashQuerystring(url,p): String
 ```
-### getHashQuerystring
+## getHashQuerystring
 #### 获取Hash url query, 如果name为空返回query部分
 - 参数
   * ` String `  url
@@ -340,7 +339,7 @@ vuepress dev docs --no-cache     # 在每次构建前删除 cache
 ``` 
   CmpHelper.getHashQuerystring(url,name): String
 ```
-### getUrlHash
+## getUrlHash
 #### 获取url hash部分
 - 参数
   * ` String `  url
@@ -348,7 +347,7 @@ vuepress dev docs --no-cache     # 在每次构建前删除 cache
 ``` 
   CmpHelper.getUrlHash(url): String
 ```
-### getUrlPart
+## getUrlPart
 #### 获取url路径部分
 - 参数
   * ` String `  url
@@ -356,7 +355,7 @@ vuepress dev docs --no-cache     # 在每次构建前删除 cache
 ``` 
   CmpHelper.getUrlPart(url): String
 ```
-### isAbsolutelyUrl
+## isAbsolutelyUrl
 #### 是否包含：
 - 参数
   * ` String `  url
@@ -374,7 +373,7 @@ vuepress dev docs --no-cache     # 在每次构建前删除 cache
 ```
 ### autoSelect -->
 
-### getFirstItem
+## getFirstItem
 #### 根据propKey属性值获取数据
 - 参数
   * ` String `  url
@@ -385,7 +384,7 @@ vuepress dev docs --no-cache     # 在每次构建前删除 cache
 
 
 
-### makeChildren
+## makeChildren
 ####  数组父子关联
 - 参数
   * ` Array `   data          数据源
@@ -397,19 +396,19 @@ vuepress dev docs --no-cache     # 在每次构建前删除 cache
 ```
 
 
-### safeOperator
+## safeOperator
 ####  安全操作符
 * promise
 ``` 
   CmpHelper.safeOperator(): 
 ```
-### awaitWrap
+## awaitWrap
 #### 统一 await 返回值: [err, data]
 * promise
 ``` 
   CmpHelper.awaitWrap(): promise
 ```
-### dispatchEvent
+## dispatchEvent
 #### 发送一个事件
 - 参数
   * ` String `  element      HTML Element
@@ -421,6 +420,3 @@ vuepress dev docs --no-cache     # 在每次构建前删除 cache
 ``` 
   CmpHelper.dispatchEvent(url): String
 ```
-### getVueName
-
-

@@ -6,7 +6,7 @@ module.exports = {
     ['link', { rel: 'icon', href: '/favicon.ico' }],
   ],
   markdown: {
-    lineNumbers: false // 代码块显示行号
+    lineNumbers: false
   },
   themeConfig: {
     sidebarDepth: 2, // e'b将同时提取markdown中h2 和 h3 标题，显示在侧边栏上。
@@ -29,12 +29,24 @@ module.exports = {
         path: '/rules/api',
       },
       {
-        title: 'CmpHelper',
+        title: '公共方法API',
         path: '/cmpHelper/api',
       },
       {
-        title: 'CmpCore',
+        title: '框架API',
         path: '/cmpCore/api',
+      },
+      {
+        title: '业务相关API',
+        path: '/cmpIaas/api',
+      },
+      {
+        title: '基础组件',
+        path: '/cmpIaas/component',
+      },
+      {
+        title: '业务组件',
+        path: '/cmpIaas/bussiness',
       },
     ]
   }
