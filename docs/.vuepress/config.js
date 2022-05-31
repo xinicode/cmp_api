@@ -48,6 +48,10 @@ module.exports = {
         title: '业务组件',
         path: '/cmpIaas/bussiness',
       },
+      {
+        title: '元数据设计器',
+        path: '/cmpMetaUI/metaui',
+      },
     ]
   }
 }
